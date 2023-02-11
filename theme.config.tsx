@@ -2,16 +2,21 @@ import React from 'react'
 import { DocsThemeConfig } from 'nextra-theme-docs'
 
 const config: DocsThemeConfig = {
-  logo: <span>My Project</span>,
+  logo: <span>Notes</span>,
   project: {
-    link: 'https://github.com/shuding/nextra-docs-template',
+    link: 'https://github.com/KushajveerSingh/technical_notes',
   },
-  chat: {
-    link: 'https://discord.com',
-  },
-  docsRepositoryBase: 'https://github.com/shuding/nextra-docs-template',
+  docsRepositoryBase: 'https://github.com/KushajveerSingh/technical_notes/tree/main',
   footer: {
-    text: 'Nextra Docs Template',
+    text: <span>Copyright &copy; {new Date().getFullYear()} Kushajveer Singh</span>,
+  },
+  head: (
+    <>
+      <link rel="shortcut icon" type="image/x-icon" href="/favicon.ico" />
+    </>
+  ),
+  sidebar: {
+    defaultMenuCollapseLevel: 2,
   },
 }
 

@@ -1,22 +1,24 @@
 {
-  "name": "nextra-docs-template",
+  "name": "technical-notes",
   "version": "0.0.1",
-  "description": "Nextra docs template",
+  "description": "A collection of my notes related to programming.",
   "scripts": {
     "dev": "next dev",
     "build": "next build",
-    "start": "next start"
+    "start": "next start",
+    "lint": "next lint",
+    "export": "next build && next export -o docs/"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/shuding/nextra-docs-template.git"
+    "url": "git+https://github.com/KushajveerSingh/technical_notes.git"
   },
-  "author": "Shu Ding <g@shud.in>",
+  "author": "Kushajveer Singh",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/shuding/nextra-docs-template/issues"
+    "url": "https://github.com/KushajveerSingh/technical_notes/issues"
   },
-  "homepage": "https://github.com/shuding/nextra-docs-template#readme",
+  "homepage": "https://github.com/KushajveerSingh/technical_notes",
   "dependencies": {
     "next": "^13.0.6",
     "nextra": "latest",
@@ -26,6 +28,10 @@
   },
   "devDependencies": {
     "@types/node": "18.11.10",
+    "@types/react": "^18.0.27",
+    "eslint": "8.34.0",
+    "eslint-config-next": "13.1.6",
+    "eslint-config-prettier": "^8.6.0",
     "typescript": "^4.9.3"
   }
 }
