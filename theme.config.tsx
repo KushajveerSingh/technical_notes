@@ -1,5 +1,5 @@
-import React from 'react'
-import { DocsThemeConfig } from 'nextra-theme-docs'
+import React from 'react';
+import { DocsThemeConfig, useConfig } from 'nextra-theme-docs';
 
 const config: DocsThemeConfig = {
   logo: <span>Notes</span>,
@@ -10,14 +10,16 @@ const config: DocsThemeConfig = {
   footer: {
     text: <span>Copyright &copy; {new Date().getFullYear()} Kushajveer Singh</span>,
   },
-  head: (
-    <>
-      <link rel="shortcut icon" type="image/x-icon" href="/favicon.ico" />
-    </>
-  ),
+  head: () => {
+    return (
+      <>
+        <link rel="shortcut icon" type="image/x-icon" href="/favicon.ico" />
+      </>
+    );
+  },
   sidebar: {
     defaultMenuCollapseLevel: 2,
   },
-}
+};
 
-export default config
+export default config;
