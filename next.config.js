@@ -3,6 +3,11 @@ const withNextra = require('nextra')({
   themeConfig: './theme.config.tsx',
   defaultShowCopyCode: true,
   latex: true,
-})
+});
 
-module.exports = withNextra()
+module.exports = {
+  ...withNextra(),
+  images: {
+    unoptimized: true,
+  },
+};
